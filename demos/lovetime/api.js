@@ -1,6 +1,6 @@
 // 合约地址
 // const CONTRACT_URL="n22pBKyE7Ge8SsmJRByRKN9RMSQaL4A5qjL"
-const CONTRACT_URL="n1pjstJB7wd9MN9GYUZw6UcGGvvNxqFfh6u"
+const CONTRACT_URL="n1pVXp5H3mkvw5D28Uc8QMGi5uKv4QDuNP3"
 const NebPay =require("nebpay")
 class ContractApi{
   constructor(address){
