@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/jquery.fullpage.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>LoveTime</title>
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <a href="#!">Love Time</a>
+    </div>
+    <ul class="menu" id="menu">
+      <li data-menuanchor="section1" class="nav-item"><a href="#section1">全网</a></li>
+      <li data-menuanchor="section2" class="nav-item"><a href="#section2">我的爱情记录</a></li>
+    </ul>
+    <div class="add-love" id="addLove" title="添加爱情记录">
+      <img src="./images/love.png"/>
+      <span id="total">0</span>
+    </div>
+  </header>
+  <main class="main">
+    <div id="fullscreen">
+        <section class="section">
+          <h1>All Love Records.</h1>
+          <ul class="love-list" id="allLoveList">
+            <p>加载中...</p>
+          </ul>
+          <div class="control">
+            <a class="prev" href="#!" id="prev"><img src="./images/previous.png"/></a>
+            <a class="next" href="#!" id="next"><img src="./images/next.png"/></a>
+          </div>
+        </section>
+        <section class="section">
+            <h1>Yours</h1>
+            <ul class="love-list" id="myLoveList">
+                <p>加载中...</p>
+              </ul>
+        </section>
+    </div>
+    <div id="modal" class="modal hidden">
+      <div class="modal-box" id="modal-box">
+        <form id="form">
+          <div class="input-row">
+              <label>男方姓名：</label>
+              <input type="text" name="boy"/>
+            </div>
+            <div class="input-row">
+              <label>女方姓名：</label>
+              <input type="text" name="girl"/>
+            </div>
+            <div class="input-row">
+              <label>爱情宣言：</label>
+              <input type="text" name="text"/>
+            </div>
+            <div>
+                <button class="btn" id="confirm">确定</button>
+                <button class="btn" id="cancle">取消</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script src="./nebPay.js"></script>
+  <script src="./api.js"></script>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/jquery.fullpage.min.js"></script>
+  <script src="./js/sweet.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

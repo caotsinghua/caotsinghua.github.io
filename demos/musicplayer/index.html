@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class="back"></div>
+	<div class="mask"></div>
+	<div class="main">
+		<div class="search-bar">
+			<form class="am-form am-form-horizontal">
+				<div class="am-form-group">
+			      <div class="am-u-sm-10">
+			      	<input type="text" class="" id="search-name" placeholder="输入歌曲名查找">
+			      </div>
+			      <div class="am-u-sm-2">
+					<button type="button" class="am-btn am-btn-secondary" id="search-btn">搜索</button>
+			      </div>
+			    </div>
+			</form>
+		</div>
+		<div class="am-g">
+			<div class="am-u-sm-6">
+				<div class="songs-list-wrap">
+					<table class="am-table am-table-striped am-table-hover am-table-centered" id="songList">
+					    <tr>
+							<th>歌名</th>
+							<th>歌手</th>
+							<th>操作</th>
+					    </tr>
+					  	<tr >
+							<td colspan="3">暂无歌曲</td>
+					  	</tr>
+					</table>
+				</div>
+			</div>
+			<div class="am-u-sm-6">
+				<div class="lyric-wrap">
+					<p class="lyric">暂无歌词</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="app" id="musicPlayer">
+			<audio src="" class="music" id="music" autoplay>不支持audio</audio>
+			<div class="am-g">
+				<div class="am-u-sm-8 player-wrap">
+					<div class="music-info">
+						<h3 class="music-name">无歌曲</h3>
+						<small class="singer-name"></small>
+					</div>
+					<div class="controls-top">
+						<div class="left">
+							<span class="time">00:00/00:00</span>
+							<a href="javascript:;" class="am-icon-volume-up volume"></a>
+							<div class="volume-progress">
+								<div class="volume-progress-inner"></div>
+								<div class="volume-progress-controller"></div>
+							</div>
+						</div>
+						<div class="right">
+							<a href="##" class="am-icon-music show-lyric" title="歌词"></a>
+							<a href="##" class="am-icon-download download" title="下载"></a>
+							<a href="##" class="am-icon-arrows add" title="加入歌单"></a>
+							<a href="##" class="am-icon-share-alt share" title="分享"></a>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="progress-inner"></div>
+						<div class="progress-controller"></div>
+					</div>
+					<div class="controls-bottom">
+						<div class="left">
+							<a href="##" class="am-icon-btn am-icon-heart-o" ></a>
+							<a href="##" class="am-icon-btn am-icon-shopping-basket" title="从歌单删除"></a>
+						</div>
+						<div class="left">
+							<a href="javascript:;" class="am-icon-btn am-icon-step-backward" id="prev"></a>
+							<a href="javascript:;" class="am-icon-btn am-icon-pause" id="pause"></a>
+							<a href="javascript:;" class="am-icon-btn am-icon-step-forward" id="next"></a>
+						</div>
+					</div>
+				</div>
+				<div class="am-u-sm-4 poster-wrap">
+					<div class="poster">
+						<img src="http://www.zhlzw.com/UploadFiles/Article_UploadFiles/201210/20121006154614370.jpg" class="poster-img">
+					</div>
+				</div>
+			</div>
+		</div>
+	<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

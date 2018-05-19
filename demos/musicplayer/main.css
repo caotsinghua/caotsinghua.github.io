@@ -1,0 +1,193 @@
+body{
+	color: #fff;
+}
+.back{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background:#595858;
+	background-repeat: no-repeat;
+	background-size: cover; 
+	filter: blur(30px);
+	-webkit-filter: blur(30px);
+}
+.mask{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+}
+.main{
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 2rem 1rem;
+}
+.songs-list-wrap{
+	font-size: 1.2rem;
+	transition: .3s;
+	height: calc(100vh - 300px);
+	padding: 0 1rem;
+	overflow-y: auto;
+
+}
+.songs-list-wrap tr{
+	height: 3rem;
+	padding: 0.5rem 0;
+}
+.am-table-striped>tbody>tr:nth-child(odd)>th{
+	color: #000 !important;
+}
+.lyric-wrap{
+	border-left: 1px solid #ccc;
+	text-align: center;
+	/* min-height: 10rem; */
+	height: calc(100vh - 300px);
+	overflow-y: auto;
+}
+.lyric-wrap>.lyric{
+	font-size: 1.4rem;
+}
+.song-li .play-btn{
+	font-size: 1rem;
+	width: 2rem;
+	height: 2rem;
+	line-height: 2rem;
+	background: rgba(255, 255, 255, 0.5)
+}
+.app{
+	box-shadow: -2px 0px 3px #000; 
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right:0;
+}
+.player-wrap{
+	
+	padding: 2rem;
+	display: flex;
+	height: 200px;
+	flex-direction: column;
+}
+.poster-wrap{
+	height: 200px;
+}
+.poster{
+	width: 180px;
+	height:180px;
+	margin: 6px auto;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.poster .poster-img{
+	width: 100%;
+	height:100%;
+}
+.music-info .music-name{
+	margin-bottom: 1rem;
+}
+.controls-top,.controls-bottom{
+	display: flex;
+	justify-content: space-between;
+}
+.controls-top .left{
+	display: flex;
+	align-items: center;
+}
+
+.controls-top .time{
+	color: #ccc;
+}
+.controls-top a{
+	color: #ccc;
+	margin-left: 3px;
+}
+.controls-bottom .am-icon-btn{
+	height: 2.5rem;
+	width: 2.5rem;
+	line-height: 2.5rem;
+	font-size: 1.5rem;
+}
+.progress,.volume-progress{
+	width: 100%;
+	height: 2px;
+	background:#eee;
+	margin: 1rem 0;
+	position: relative;
+	border-radius: 10px;
+}
+.volume-progress{
+	width: 60px;
+	margin-left: 5px;
+}
+.progress-inner,.volume-progress-inner{
+	width: 0;
+	height: 2px;
+	background: green;
+}
+.progress-controller,.volume-progress-controller{
+	width: 8px;
+	height: 8px;
+	background: green;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -4px;
+}
+.progress-controller:hover,.volume-progress-controller:hover{
+	transform: scale(2);
+	cursor: pointer;
+}
+.playing{
+	animation: poster 3s infinite linear;
+}
+@keyframes poster{
+	from {
+		transform: rotate(0deg)
+	}to{
+		transform: rotate(360deg)
+	}
+}
+.songs-list-wrap::-webkit-scrollbar {
+        width:5px;
+        border-radius: 3px;
+ }
+.songs-list-wrap::-webkit-scrollbar-track {
+		  background-color: rgba(0, 0, 0, 0);
+} /* 滚动条的滑轨背景颜色 */
+
+.songs-list-wrap::-webkit-scrollbar-thumb {
+		  background-color: rgba(121, 226, 216,0.8);
+
+} /* 滑块颜色 */
+
+.songs-list-wrap::-webkit-scrollbar-button {
+		  background-color: #fff;
+	} /* 滑轨两头的监听按钮颜色 */
+
+.songs-list-wrap::-webkit-scrollbar-corner {
+		  background-color: black;
+	} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+
+
+
+.lyric-wrap::-webkit-scrollbar {
+        width:5px;
+        border-radius: 3px;
+ }
+.lyric-wrap::-webkit-scrollbar-track {
+		  background-color: rgba(0, 0, 0, 0);
+} /* 滚动条的滑轨背景颜色 */
+
+.lyric-wrap::-webkit-scrollbar-thumb {
+		  background-color: rgba(121, 226, 216,0.8);
+
+} /* 滑块颜色 */
+
+.lyric-wrap::-webkit-scrollbar-button {
+		  background-color: #fff;
+	} /* 滑轨两头的监听按钮颜色 */
+
+.lyric-wrap::-webkit-scrollbar-corner {
+		  background-color: black;
+	} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */

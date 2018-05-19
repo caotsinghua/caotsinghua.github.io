@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/one.css" />
+</head>
+<body>
+	<!-- 主界面不动、菜单移动 -->
+	<!-- 侧滑导航根容器 -->
+	<div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+	  <!-- 菜单容器 -->
+	  <aside class="mui-off-canvas-left" id="offCanvasSide">
+	    <div class="mui-scroll-wrapper sidebar">
+	      <div class="mui-scroll">
+	        <!-- 菜单具体展示内容 -->
+	        <ul class="mui-table-view menu-list">
+	                <li class="mui-table-view-cell active" id="a">[ 动漫 ]</li>
+				    <li class="mui-table-view-cell " id="b">[ 漫画]</li>
+				    <li class="mui-table-view-cell " id="c">[ 小说 ]</li>
+				    <li class="mui-table-view-cell " id="d">[ 原创 ]</li>
+				    <li class="mui-table-view-cell " id="e">[ 来自网络]</li>
+				    <li class="mui-table-view-cell " id="f">[ 其他 ]</li>
+	            </ul>
+	      </div>
+	    </div>
+	  </aside>
+	  <!-- 主页面容器 -->
+	  <div class="mui-inner-wrap">
+	    <!-- 主页面标题 -->
+	    <header class="mui-bar mui-bar-nav">
+	      <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
+	      <h1 class="mui-title">一言</h1>
+	    </header>
+	    <footer class="mui-bar mui-bar-footer footer">
+		    <a class="refresh-btn" href="javascript:;">
+		    	<span class="mui-icon mui-icon-refresh" id="refreshicon"></span>
+		    </a>
+		</footer>
+
+	    <div class="mui-content mui-scroll-wrapper">
+	      <div class="mui-scroll">
+	        <!-- 主界面具体展示内容 -->
+			<div class="mui-content">
+				<div class="mui-card">
+					<!--页眉，放置标题-->
+					<div class="mui-card-header">
+						<div class="one-info">
+							
+							<p ><span class="mui-icon mui-icon-person"></span><span class="one-username"></span></p>
+							<p ><span class="mui-icon mui-icon-paperclip"></span><span class="one-time"></span></p>
+						</div>
+					</div>
+					<!--内容区-->
+					<div class="mui-card-content">
+						<div class="one-content">
+							<p class="one-sentence">暂无内容</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+	      </div>
+	    </div>  
+	    
+	    <div class="mui-off-canvas-backdrop"></div>
+	  </div>
+	</div>
+	
+	<script>
+		mui.init({
+		 
+		});
+		(function(){
+			let now_cat='a';
+			function getSentence(type){
+				document.getElementById('refreshicon').className='mui-icon mui-icon-spinner-cycle mui-spin';
+				mui.ajax('https://bird.ioliu.cn/v1/?url=https://api.imjad.cn/hitokoto/?encode=json',{
+					data:{
+						cat:type
+					},
+					headers:{'Content-Type':'application/x-www-form-urlencoded'},	 
+					dataType:'json',//服务器返回json格式数据
+					type:'get',//HTTP请求类型
+					timeout:10000,//超时时间设置为10秒；
+					success:function(data){	
+						document.getElementById('refreshicon').className="mui-icon mui-icon-refresh";
+						document.querySelector('.one-username').innerText=data.author;
+						document.querySelector('.one-time').innerText='发表于'+data.date;
+						document.querySelector('.one-sentence').innerText=data.hitokoto;
+					}
+			
+				});
+			}
+			function setActive(eles,ele){
+				eles.forEach(item=>{
+					item.classList.remove('active')
+				})
+				ele.classList.add('active');
+			}
+			function init(){
+				now_cat='a';
+				getSentence(now_cat);
+			}
+			mui('.mui-table-view').on('tap','.mui-table-view-cell',function(e){
+			  let type=this.getAttribute('id');
+			  let eles=document.querySelectorAll('.mui-table-view-cell');
+			  getSentence(type);
+			  setActive(eles,this);
+			  now_cat=type;
+			}) 
+			mui('.footer').on('tap','.refresh-btn',function(e){
+			  //重新根据当前分类刷新句子
+			  getSentence(now_cat);
+			}) 
+			init();
+		}())
+	</script>
+</body>
+</html>

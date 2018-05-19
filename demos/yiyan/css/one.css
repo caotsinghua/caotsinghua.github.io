@@ -1,0 +1,63 @@
+.mui-card-header{
+	background-image: url(../imgs/back.jpg);
+	background-size: cover;
+	padding: 3rem;
+	
+}
+.one-info p{
+	color:#FFFFFF;
+}
+.one-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: calc(100vh - 20rem);
+	padding: 1rem;
+}
+.one-content .one-sentence{
+	font-size: 1.1rem;
+}
+.footer{
+	background: transparent;
+}
+.refresh-btn{
+	display: block;
+	text-align: center;
+	color: #000;
+	transition: .3s;
+}
+.refresh-btn:active{
+	color: #8A6DE9;
+}
+.sidebar{
+	background: #efeff4;
+}
+.sidebar .mui-scroll{
+	height: 100%;
+}
+.menu-list{
+	height: 100%;
+/*	background: #efeff4;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.menu-list .mui-table-view-cell{
+	text-align: center;
+	transition: .3s;
+}
+.mui-icon-spinner-cycle{
+	animation: rotate infinite 1s linear;
+}
+@-webkit-keyframes rotate{
+	from{
+		transform: rotate(0);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+.active{
+	background: #EEEEEE;
+}

@@ -1,0 +1,103 @@
+*{
+		margin:0;
+		padding:0;
+	}
+	html,body{
+		width:100%;
+		background-color:rgb(250,250,250);
+		font-family:Roboto,Noto,Helvetica,Arial,sans-serif;
+		font-size: 15px;
+        overflow-x: hidden;
+	}
+    .my-header{
+    	height:175px;
+    	/* background-image: url(imgs/按钮背景.png);
+        background-size:cover;
+    	background-repeat: no-repeat; */
+        border-radius: 0 0 50% 50%;
+        background: rgb(248,69,69);
+        width: 120%;
+        position: relative;
+        left: -10%;
+    	color:white;
+		padding-top: 40px;
+		box-sizing: border-box;
+    }
+
+    .my-header div p{
+    	margin:15px 0;
+    }
+    .my-button{
+		display: block;
+		text-decoration: none;
+    	color:white;
+    	height:87px;
+    	width: 87px;
+    	border:0;
+    	border-radius:50%;
+    	background-color:#f76c79;
+    	line-height: 87px;
+    	margin-top:-54px;
+    	outline:none;
+		box-shadow: 0px 0px 3px 2px rgba(0, 0, 0,.2);
+		text-align: center;
+		-webkit-transition:.3s;
+		transition: .3s;
+        position: relative;
+    }
+	.my-button:active{
+		box-shadow: 0px 2px 1px 2px rgba(0, 0, 0,.2);
+	}
+     .btn-raised{
+        box-shadow: 3px 5px -2px rgba(165,0,1,.2),0 3px 3px 0 rgba(165,0,1,.14),0 3px 3px 0 rgba(165,0,1,.12);
+    }
+    .history{
+    	width:63px;
+    	height:23px;
+    	color:#f76c79;
+    	line-height:23px;
+    	font-size: 15px;
+    	border-bottom:2px solid #f76c79; 
+    	margin-bottom:16px;
+    	margin-top:15px;
+		
+    }
+    main{
+    	width:88%;
+    	margin:0 auto;
+    }
+    main ul li{
+    	height:72px;
+    	margin-bottom:12px;
+    	background-color: white;
+    	box-shadow:3px 3px 3px #d3cecf,
+                 -1px -1px 3px #d3cecf;
+        border-radius:4px;
+    }
+    .photo{
+    	margin-right:7px;
+    	margin-left:3px;
+    }
+    .my-text{
+    	font-size:11px;
+    }
+
+
+/*新增入口*/
+.me-start{
+	width: 3.5rem;
+	height:auto;
+	position: absolute;
+	right: 10%;
+	top:0;
+}
+.me-start img{
+	width: 100%;
+}
+
+@media screen and (max-width: 320px){
+    .my-button{
+        width: 80px;
+        height: 80px;
+    }
+}

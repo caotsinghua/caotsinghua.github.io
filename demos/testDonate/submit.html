@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>提交物品</title>
+    <link rel="stylesheet" href="./assets/mdui/css/mdui.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    
+</head>
+<body>
+
+    <header>  
+        <div mdui-headroom class="mdui-toolbar my-header">
+             <a href="javascript:;" id="my-back-btn" class="back-icon"><img src="./assets/imgs/back.png" ></a>
+             <p class="mdui-center my-title">提交物品</p>
+        </div>
+    </header>
+    <main>
+
+        <form action="" id="form" method="get">
+        <div class="mdui-container-fluid my-tab-bar mdui-clearfix">
+                <div class="tab-background"></div>
+                <div class="my-kind-img mdui-float-left">
+                    <img src="./assets/imgs/type1.png" id="choice_img" class="animated">
+                </div>
+                <div class="mdui-float-left">
+                     <p class="tab-text animated" id="choice_text">电子产品</p>
+                </div>
+                <div class="my-kind-text mdui-float-right">
+                    <div class="mdui-textfield thing-input">
+                        <span class="money-tag">￥</span>
+                        <div class="mdui-textfield-error text-error">不能为空!</div>
+                        <input class="mdui-textfield-input" id="input_name" type="text" placeholder="捐赠物品.." required name="name" />
+                        
+                     </div>
+                </div>
+        </div>
+        <div class="my-container">
+            <div class="my-choice-wrap">
+                <ul class="my-choices mdui-row">
+                    <li class="my-choice mdui-col-xs-3 mdui-ripple">
+                        <img class="my-choice-img" src="./assets/imgs/type0.png" alt="">
+                        <p class="my-choice-text">资金</p>
+                        <input type="radio" value="0" class="thing-radio" name="type">
+                    </li>
+                     <li class="my-choice mdui-col-xs-3 mdui-ripple">
+                        <img class="my-choice-img img-ele" src="./assets/imgs/type1.png" alt="">
+                        <p class="my-choice-text">电子产品</p>
+                        <input type="radio" value="1" class="thing-radio" name="type" checked>
+                    </li>
+                     <li class="my-choice mdui-col-xs-3 mdui-ripple">
+                        <img class="my-choice-img" src="./assets/imgs/type2.png" alt="">
+                        <p class="my-choice-text">体育用品</p>
+                        <input type="radio" value="2" class="thing-radio" name="type">
+                    </li>
+                     <li class="my-choice mdui-col-xs-3 mdui-ripple">
+                        <img class="my-choice-img" src="./assets/imgs/type3.png" alt="">
+                        <p class="my-choice-text">书籍</p>
+                        <input type="radio" value="3" class="thing-radio" name="type">
+                    </li>
+                     <li class="my-choice mdui-col-xs-3 mdui-ripple">
+                        <img class="my-choice-img" src="./assets/imgs/type4.png" alt="">
+                        <p class="my-choice-text">文具</p>
+                        <input type="radio" value="4" class="thing-radio" name="type">
+                    </li>
+                     <li class="my-choice mdui-col-xs-3 mdui-ripple">
+                        <img class="my-choice-img" src="./assets/imgs/type5.png" alt="">
+                        <p class="my-choice-text">装饰配件</p>
+                        <input type="radio" value="5" class="thing-radio" name="type">
+                    </li>
+                     <li class="my-choice mdui-col-xs-3 mdui-ripple">
+                        <img class="my-choice-img" src="./assets/imgs/type6.png" alt="">
+                        <p class="my-choice-text">其他</p>
+                        <input type="radio" value="6" class="thing-radio" name="type">
+                    </li>
+                </ul>
+            </div>
+            <div class="my-leftsome">
+                <div class="my-express-input animated fadeInRight">
+                    <div class="mdui-row">
+                        <div class="mdui-col-xs-3 select-wrap">
+                            <select name="expressType" class="express-select" autocomplete="off">
+                                <option value="NONE">快递</option>
+                                <option value="SF">顺丰</option>
+                                <option value="ZTO">中通</option>
+                                <option value="YTO">圆通</option>
+                                <option value="YD">韵达</option>
+                                <option value="EMS">EMS</option>
+                                <option value="STO">申通</option>
+                                <option value="HTKY">百世</option> 
+                                <option value="HHTT">天天</option> 
+                            </select>
+                        </div>
+                        <div class="mdui-col-xs-9">
+                            <input type="number" name="expressID" placeholder="无" class="express-content" disabled>
+                        </div>
+                    </div>
+                </div>
+                <textarea class="my-left-some-text " placeholder="留言" id="left_message" name="msg"></textarea>
+                <button class="mdui-btn mdui-btn-raised mdui-ripple my-submit-btn" id="submit_btn" >提交</button>
+            </div>
+            
+        </div>
+        </form>
+    </main>
+    <script src="./assets/fastclick.js"></script>
+    <script>
+        if ('addEventListener' in document) {
+            document.addEventListener('DOMContentLoaded', function() {
+                FastClick.attach(document.body);
+            }, false);
+        }
+        
+    </script>
+    <script src="./assets/main.js"></script>
+</body>
+</html>
