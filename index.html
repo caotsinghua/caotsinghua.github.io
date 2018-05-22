@@ -151,34 +151,28 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-koa-router匹配路径" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-排序数组找插入值" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/18/koa-router匹配路径/">koa-router匹配路径</a>
+      <a class="article-title" href="/2018/05/18/排序数组找插入值/">排序数组找插入位置</a>
     </h1>
   
 
         
-        <a href="/2017/09/18/koa-router匹配路径/" class="archive-article-date">
-  	<time datetime="2017-09-18T12:17:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-18</time>
+        <a href="/2018/05/18/排序数组找插入值/" class="archive-article-date">
+  	<time datetime="2018-05-18T15:45:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-18</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>在express中<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">router.use(&apos;/user&apos;,adminAuth,userRouter)</span><br></pre></td></tr></table></figure></p>
-<p>会匹配/user开头的所有路径，比如/user/123，都会经过userrouter。<br>但是在koa-router里<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">router.use(&apos;/user&apos;,adminAuth,userRouter)</span><br></pre></td></tr></table></figure></p>
-<p>只会匹配/user这一个路径</p>
-<p>由于app.use可以匹配所有路径，所以把<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app.use(&apos;/user&apos;,user.routes(),user.allowedMethods());</span><br></pre></td></tr></table></figure></p>
-<p>或者<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app.use(&apos;/&apos;,user.routes(),user.allowedMethods());</span><br></pre></td></tr></table></figure></p>
-<p>改成<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app.use(user.routes(),user.allowedMethods());</span><br></pre></td></tr></table></figure></p>
-<p>就能匹配所有的/user开头路径了。</p>
-
+        <h1 id="排序数组找插入位置"><a href="#排序数组找插入位置" class="headerlink" title="排序数组找插入位置"></a>排序数组找插入位置</h1>
+        
       
 
       
@@ -191,7 +185,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">-koa</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">js算法</a>
         		</li>
       		
 		</ul>
@@ -201,7 +195,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/09/18/koa-router匹配路径/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/05/18/排序数组找插入值/">展开全文 >></a>
         </p>
       
 
@@ -219,27 +213,27 @@
 
 
   
-    <article id="post-你不知道的js-2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-二进制和" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/09/你不知道的js-2/">你不知道的js(2)</a>
+      <a class="article-title" href="/2018/05/18/二进制和/">二进制和</a>
     </h1>
   
 
         
-        <a href="/2017/05/09/你不知道的js-2/" class="archive-article-date">
-  	<time datetime="2017-05-09T11:17:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-09</time>
+        <a href="/2018/05/18/二进制和/" class="archive-article-date">
+  	<time datetime="2018-05-18T15:45:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-18</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="关于变量提升"><a href="#关于变量提升" class="headerlink" title="关于变量提升"></a>关于变量提升</h3>
+        <h1 id="二进制和"><a href="#二进制和" class="headerlink" title="二进制和"></a>二进制和</h1>
         
       
 
@@ -253,7 +247,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">js算法</a>
         		</li>
       		
 		</ul>
@@ -263,7 +257,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/05/09/你不知道的js-2/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/05/18/二进制和/">展开全文 >></a>
         </p>
       
 
@@ -281,27 +275,28 @@
 
 
   
-    <article id="post-你不知道的js-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-leetcode38报数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/09/你不知道的js-1/">你不知道的js(1)</a>
+      <a class="article-title" href="/2018/05/18/leetcode38报数/">38报数</a>
     </h1>
   
 
         
-        <a href="/2017/05/09/你不知道的js-1/" class="archive-article-date">
-  	<time datetime="2017-05-09T10:53:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-09</time>
+        <a href="/2018/05/18/leetcode38报数/" class="archive-article-date">
+  	<time datetime="2018-05-18T15:45:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-18</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="直接说一个简单的模块机制"><a href="#直接说一个简单的模块机制" class="headerlink" title="直接说一个简单的模块机制"></a>直接说一个简单的模块机制</h2><p>最近在看《你不知道的js》，确实对js又有了一些理解。对于模块化一直一知半解，书中有一个例子。<br>
+        <h1 id="38报数"><a href="#38报数" class="headerlink" title="38报数"></a>38报数</h1><blockquote>
+<p>报数序列是指一个整数序列，按照其中的整数的顺序进行报数，得到下一个数。其前五项如下：<br>
         
       
 
@@ -315,7 +310,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">js算法</a>
         		</li>
       		
 		</ul>
@@ -325,7 +320,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/05/09/你不知道的js-1/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/05/18/leetcode38报数/">展开全文 >></a>
         </p>
       
 
@@ -343,27 +338,27 @@
 
 
   
-    <article id="post-git整理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-leetcode一些简单题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/08/git整理/">git整理</a>
+      <a class="article-title" href="/2018/05/18/leetcode一些简单题/">leetcode的简单题(53,58,66...)</a>
     </h1>
   
 
         
-        <a href="/2017/04/08/git整理/" class="archive-article-date">
-  	<time datetime="2017-04-08T09:14:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-08</time>
+        <a href="/2018/05/18/leetcode一些简单题/" class="archive-article-date">
+  	<time datetime="2018-05-18T15:44:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-18</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="git整理"><a href="#git整理" class="headerlink" title="git整理"></a>git整理</h3>
+        <h1 id="leetcode的简单题-53-58-66…"><a href="#leetcode的简单题-53-58-66…" class="headerlink" title="leetcode的简单题(53,58,66…)"></a>leetcode的简单题(53,58,66…)</h1>
         
       
 
@@ -377,7 +372,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">js算法</a>
         		</li>
       		
 		</ul>
@@ -387,7 +382,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/04/08/git整理/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/05/18/leetcode一些简单题/">展开全文 >></a>
         </p>
       
 
@@ -405,27 +400,27 @@
 
 
   
-    <article id="post-gulp使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-实现 strStr() 函数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/09/gulp使用/">gulp使用</a>
+      <a class="article-title" href="/2018/05/16/实现 strStr() 函数/">实现 strStr() 函数。</a>
     </h1>
   
 
         
-        <a href="/2017/03/09/gulp使用/" class="archive-article-date">
-  	<time datetime="2017-03-09T11:25:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-09</time>
+        <a href="/2018/05/16/实现 strStr() 函数/" class="archive-article-date">
+  	<time datetime="2018-05-16T15:45:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-16</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="gulp使用"><a href="#gulp使用" class="headerlink" title="gulp使用"></a>gulp使用</h3>
+        <h1 id="实现-strStr-函数。"><a href="#实现-strStr-函数。" class="headerlink" title="实现 strStr() 函数。"></a>实现 strStr() 函数。</h1>
         
       
 
@@ -439,7 +434,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">gulp</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">js算法</a>
         		</li>
       		
 		</ul>
@@ -449,7 +444,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/09/gulp使用/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/05/16/实现 strStr() 函数/">展开全文 >></a>
         </p>
       
 
@@ -467,27 +462,27 @@
 
 
   
-    <article id="post-图片瀑布流" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-27移除元素" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/05/图片瀑布流/">图片瀑布流</a>
+      <a class="article-title" href="/2018/05/16/27移除元素/">27. 移除元素</a>
     </h1>
   
 
         
-        <a href="/2017/03/05/图片瀑布流/" class="archive-article-date">
-  	<time datetime="2017-03-05T04:11:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-05</time>
+        <a href="/2018/05/16/27移除元素/" class="archive-article-date">
+  	<time datetime="2018-05-16T15:45:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-16</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>刚写了一点关于瀑布流的布局示例。比如有一堆图片，大小各不相同。现在要按照一定的大小依次排列。并且不能有很大的空隙，就是说要尽可能填充满。比如这样<br>
+        <h1 id="27-移除元素"><a href="#27-移除元素" class="headerlink" title="27. 移除元素"></a>27. 移除元素</h1>
         
       
 
@@ -501,7 +496,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">布局技巧</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">js算法</a>
         		</li>
       		
 		</ul>
@@ -511,7 +506,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/05/图片瀑布流/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/05/16/27移除元素/">展开全文 >></a>
         </p>
       
 
@@ -529,27 +524,27 @@
 
 
   
-    <article id="post-sass日记2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-26. 删除排序数组中的重复项" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/05/sass日记2/">sass日记2</a>
+      <a class="article-title" href="/2018/05/16/26. 删除排序数组中的重复项/">26. 删除排序数组中的重复项</a>
     </h1>
   
 
         
-        <a href="/2017/03/05/sass日记2/" class="archive-article-date">
-  	<time datetime="2017-03-05T04:07:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-05</time>
+        <a href="/2018/05/16/26. 删除排序数组中的重复项/" class="archive-article-date">
+  	<time datetime="2018-05-16T15:45:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-16</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>sass学习笔记day2<br>
+        <h1 id="26-删除排序数组中的重复项"><a href="#26-删除排序数组中的重复项" class="headerlink" title="26. 删除排序数组中的重复项"></a>26. 删除排序数组中的重复项</h1>
         
       
 
@@ -563,7 +558,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">sass</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">js算法</a>
         		</li>
       		
 		</ul>
@@ -573,7 +568,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/05/sass日记2/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/05/16/26. 删除排序数组中的重复项/">展开全文 >></a>
         </p>
       
 
@@ -591,27 +586,27 @@
 
 
   
-    <article id="post-sass日记1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-14. 最长公共前缀" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/05/sass日记1/">sass日记1</a>
+      <a class="article-title" href="/2018/05/16/14. 最长公共前缀/">14. 最长公共前缀</a>
     </h1>
   
 
         
-        <a href="/2017/03/05/sass日记1/" class="archive-article-date">
-  	<time datetime="2017-03-05T04:04:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-05</time>
+        <a href="/2018/05/16/14. 最长公共前缀/" class="archive-article-date">
+  	<time datetime="2018-05-16T15:45:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-16</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="今天开始看sass，上手尚可。初学浅陋，且做几个笔记。"><a href="#今天开始看sass，上手尚可。初学浅陋，且做几个笔记。" class="headerlink" title="今天开始看sass，上手尚可。初学浅陋，且做几个笔记。"></a>今天开始看sass，上手尚可。初学浅陋，且做几个笔记。</h3>
+        <h1 id="14-最长公共前缀"><a href="#14-最长公共前缀" class="headerlink" title="14. 最长公共前缀"></a>14. 最长公共前缀</h1>
         
       
 
@@ -625,7 +620,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">sass</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">js算法</a>
         		</li>
       		
 		</ul>
@@ -635,7 +630,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/05/sass日记1/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/05/16/14. 最长公共前缀/">展开全文 >></a>
         </p>
       
 
@@ -653,6 +648,134 @@
 
 
   
+    <article id="post-20. 有效的括号" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/16/20. 有效的括号/">20. 有效的括号</a>
+    </h1>
+  
+
+        
+        <a href="/2018/05/16/20. 有效的括号/" class="archive-article-date">
+  	<time datetime="2018-05-16T15:45:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="20-有效的括号"><a href="#20-有效的括号" class="headerlink" title="20. 有效的括号"></a>20. 有效的括号</h1>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">js算法</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/05/16/20. 有效的括号/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-21合并有序链表" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/16/21合并有序链表/">21. 合并两个有序链表</a>
+    </h1>
+  
+
+        
+        <a href="/2018/05/16/21合并有序链表/" class="archive-article-date">
+  	<time datetime="2018-05-16T15:45:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="21-合并两个有序链表"><a href="#21-合并两个有序链表" class="headerlink" title="21. 合并两个有序链表"></a>21. 合并两个有序链表</h1>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">js算法</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/05/16/21合并有序链表/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 
 
@@ -742,11 +865,11 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">-koa</a>
+                <a href="javascript:void(0)" class="js-tag color5">gulp</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">gulp</a>
+                <a href="javascript:void(0)" class="js-tag color5">-koa</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -763,6 +886,26 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">布局技巧</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">js算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">es6</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">nodejs</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">reactjs</a>
               </li>
             
             <div class="clearfix"></div>
